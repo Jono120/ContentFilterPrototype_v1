@@ -8,14 +8,21 @@ namespace ContentFilterPrototype_v1
     [Activity(Label = "ContentFilterPrototype_v1", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        //This creates the main classes and text boxes into the application for the user.
+        //NOTE: These are currently not working properly.
         private Button signUp;
         private Button submitNewUser;
         private EditText txtUsername;
         private EditText txtEmail;
         private EditText txtPassword;
 
+
+        //This is class that will create the buttons and create the layouts for the input text boxes.
+        //This allows the user to click into one of the text boxes and input a username and a password.
         protected override void OnCreate(Bundle bundle)
         {
+            //NOTE: The buttons and text boxes are not getting input because something is not linking them to the above calling.
+            //They are also not being referenced in the Resources code.
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
             signUp = FindViewById<Button>(Resource.Id.btnSignUp);
@@ -33,6 +40,7 @@ namespace ContentFilterPrototype_v1
             };
         }
 
+        //This is bouncing the information through a second Activity document to allow for the application to run in the background.
         private void diagSignUp_onSignUpComplete(object sender, OnSignUpEvent e)
         {
             StartActivity(typeof(Activity));

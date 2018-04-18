@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <selector xmlns:android = "http://schemas.android.com/apk/res/android">
+  <!--This is the styling for the Sign Up Button and Sign Up Information-->
   <item android:state_pressed = "false">
     <layer-list>
       <item android:right = "5dp" android:top = "5dp">

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--This allows for the application to be built on a layout that will be universal to the whole application.-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+<!--This is for the first text box on the user interface.-->
     <EditText
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
@@ -14,6 +17,7 @@
         android:id="@+id/txtUsername"
         android:hint="Username"
         android:textColor="#000" />
+  <!--This is where the text box for the email can be customised or changed as needed.-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -25,6 +29,7 @@
         android:paddingLeft="10dp"
         android:textColor="#000"
         android:hint="Email" />
+  <!--This is where the text box for the password or passcode can be customised or changed as needed.-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -36,6 +41,7 @@
         android:textColor="#000"
         android:id="@+id/txtPassword"
         android:hint="Password" />
+   <!--This is the code for the buttons on the userinterface and allows these to be customised and changed for the registration dialogue.-->
     <Button
         android:text="Sign Up"
         android:layout_width="match_parent"

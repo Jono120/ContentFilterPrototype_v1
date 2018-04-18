@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light">
+<!--This is all of the styling code for the buttons that are running on the main screen when freshly installed
+and when the application is not enabled. This allows for the styling to change and the -->
     <TextView
         android:text="Login"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -15,6 +17,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="25sp" />
+<!--This creates the Sign In button on the main page for if the user has already registered on the app.-->
     <Button
         android:text="Sign In"
         android:layout_width="match_parent"
@@ -25,6 +28,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="15sp" />
+  <!--This creates the Sign Up button on the main page for if the user hasn't already been registered on the app.-->
     <Button
         android:text="Sign Up"
         android:layout_width="match_parent"
@@ -35,6 +39,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="15sp" />
+<!--This adds a progress bar for when the app is enabling or when it is registering the user.-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
